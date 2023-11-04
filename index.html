@@ -9,6 +9,7 @@
       integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
+      <script src="script.js"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Get Email Draft</title>
   </head>
@@ -18,16 +19,17 @@
       <p class="subtitle">Enter the Front thread link to get Email Draft</p>
     </nav>
     <div class="center_container" id="others">
-      <div class="div1">
-        <a href="#"
-          ><div class="last_seen_h">
-            <h5 class="ls">
-              Last Conversation<i
-                class="fa-solid fa-arrow-down"
-                style="color: #ffffff; margin-left: 10px"></i>
-            </h5>
-          </div>
-        </a>
+      
+      <div class="div1" id="last_Seen">
+        <a href="#" id="linked"
+        ><div class="last_seen_h" onclick="hide()">
+          <h5 class="ls">
+            Last Conversation<i
+              class="fa-solid fa-arrow-down"
+              style="color: #ffffff; margin-left: 10px"></i>
+          </h5>
+        </div>
+      </a>
       </div>
       <div class="div2">
         <form action="" method="post">
@@ -43,7 +45,11 @@
             cols="30"
             rows="10"
             placeholder="Enter front thread link"></textarea>
-          <input type="submit" value="Generate Draft" class="btn_Centr" onclick="showDiv()"/>
+          <input
+            type="submit"
+            value="Generate Draft"
+            class="btn_Centr"
+            onclick="showDiv()" />
         </form>
       </div>
       <div class="div3">
@@ -65,18 +71,20 @@
       </div>
     </div>
     <div class="alert" id="alert">
-        <a href="#"
-          ><div class="last_seen_alt"> 
-            <h5 class="alt">
-              Email Draft
-            </h5>
-          </div>
-        </a>
-        <p class="draft">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-        </p>
-        <input type="submit" value="Copy text" class="btn_Centr" />
+      <a href="#"
+        ><div class="last_seen_alt">
+          <h5 class="alt">Email Draft</h5>
+        </div>
+      </a>
+      <p class="draft">
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged.
+      </p>
+      <input type="submit" value="Copy text" class="btn_Centr" onclick="preV()" />
     </div>
-    <script src="script.js"></script>
   </body>
 </html>
