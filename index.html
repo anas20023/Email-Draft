@@ -17,7 +17,7 @@
       <h2 class="heading">Email Draft Generator</h2>
       <p class="subtitle">Enter the Front thread link to get Email Draft</p>
     </nav>
-    <div class="center_container">
+    <div class="center_container" id="others">
       <div class="div1">
         <a href="#"
           ><div class="last_seen_h">
@@ -30,12 +30,53 @@
         </a>
       </div>
       <div class="div2">
-        <form action="get_draft.php" method="post">
-         <input type="text" name="thread" id="th" placeholder="Enter front thread link" required>
-        <input type="text" name="add" id="add" placeholder="Enter Additional text........" >
+        <form action="" method="post">
+          <input
+            type="text"
+            name="thread"
+            id="th"
+            placeholder="Enter front thread link"
+            required />
+          <textarea
+            name="add"
+            id="add"
+            cols="30"
+            rows="10"
+            placeholder="Enter front thread link"></textarea>
+          <input type="submit" value="Generate Draft" class="btn_Centr" onclick="showDiv()"/>
         </form>
       </div>
-      <div class="div3"></div>
+      <div class="div3">
+        <a href="#"
+          ><div class="last_seen_ts">
+            <h5 class="ts">
+              Thread Summuary<i
+                class="fa-solid fa-arrow-down"
+                style="color: #ffffff; margin-left: 10px"></i>
+            </h5>
+          </div>
+        </a>
+        <p class="summary">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+          quos possimus eveniet amet similique, dolore nulla quae, praesentium
+          obcaecati labore, perferendis dolor consequatur placeat et. Eaque
+          corporis eveniet aspernatur omnis?
+        </p>
+      </div>
     </div>
+    <div class="alert" id="alert">
+        <a href="#"
+          ><div class="last_seen_alt"> 
+            <h5 class="alt">
+              Email Draft
+            </h5>
+          </div>
+        </a>
+        <p class="draft">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+        </p>
+        <input type="submit" value="Copy text" class="btn_Centr" />
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
