@@ -1,22 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
     <title>Get Email Draft</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <h2 class="heading">Email  Draft Generator</h2>
-        <p class="subtitle">Enter the Front thread link to get Email Draft </p>
+      <h2 class="heading">Email Draft Generator</h2>
+      <p class="subtitle">Enter the Front thread link to get Email Draft</p>
     </nav>
     <div class="center_container">
+      <div class="div1">
+        <a href="#"
+          ><div class="last_seen_h">
+            <h5 class="ls">
+              Last Conversation<i
+                class="fa-solid fa-arrow-down"
+                style="color: #ffffff; margin-left: 10px"></i>
+            </h5>
+          </div>
+        </a>
+      </div>
+      <div class="div2">
         <form action="get_draft.php" method="post">
-            <input type="text" name="link" id="inpt_box_small" placeholder="Enter the Front thread link" required>
-            <input type="submit" class="get_btn" value="Get Draft">
+         <input type="text" name="thread" id="th" placeholder="Enter front thread link" required>
+        <input type="text" name="add" id="add" placeholder="Enter Additional text........" >
         </form>
+      </div>
+      <div class="div3"></div>
     </div>
-    
-</body>
+  </body>
 </html>
