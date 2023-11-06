@@ -4,6 +4,7 @@ function showDiv() {
 }
 function preV()
 {
-  document.getElementById("alert").style.display = "none";
   document.getElementById("others").style.display = "block";
+  document.getElementById("alert").style.display = "none";
+  
 }
